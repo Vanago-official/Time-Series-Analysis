@@ -1,0 +1,69 @@
+{
+  "cutoff_time": "2026-08-08 23:22:48+00:00",
+  "test_size": 93,
+  "train_size": 65129,
+  "model_type": "lightgbm",
+  "test_metrics": {
+    "MAE": 47.653,
+    "RMSE": 73.936,
+    "R2": -0.0285
+  },
+  "baselines": {
+    "Global Median Baseline": {
+      "MAE": 44.287,
+      "RMSE": 76.473,
+      "R2": -0.1002
+    },
+    "Global Mean Baseline": {
+      "MAE": 56.233,
+      "RMSE": 74.596,
+      "R2": -0.0469
+    },
+    "7-Day Rolling Regional Mean Baseline": {
+      "MAE": 49.038,
+      "RMSE": 75.451,
+      "R2": -0.071
+    },
+    "Lag-1 Prior Alert Baseline": {
+      "MAE": 66.306,
+      "RMSE": 103.278,
+      "R2": -1.0067
+    }
+  },
+  "cv_results": {
+    "fold_scores": [
+      {
+        "MAE": 44.526,
+        "RMSE": 62.815,
+        "R2": -0.1003,
+        "fold": 1
+      },
+      {
+        "MAE": 37.32,
+        "RMSE": 55.661,
+        "R2": 0.0364,
+        "fold": 2
+      },
+      {
+        "MAE": 45.572,
+        "RMSE": 86.415,
+        "R2": 0.0568,
+        "fold": 3
+      },
+      {
+        "MAE": 83.274,
+        "RMSE": 136.353,
+        "R2": 0.125,
+        "fold": 4
+      },
+      {
+        "MAE": 75.837,
+        "RMSE": 126.87,
+        "R2": 0.2565,
+        "fold": 5
+      }
+    ],
+    "mean_mae": 57.306,
+    "mean_rmse": 93.623
+  }
+}
